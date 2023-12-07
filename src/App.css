@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  padding-inline: 20px;
+}
+form {
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.helper-text {
+  color: #777;
+  background-color: #eee;
+  padding: 15px 10px;
+  border-radius: 15px;
+}
+.input-container {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input:not([type="checkbox"]),
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select[multiple] {
+  height: auto;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  margin-block: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.checkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+}
